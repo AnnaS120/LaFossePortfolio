@@ -94,43 +94,78 @@
       </section>
 
       <!-- My journey Section -->
+
       <section id="journey" class="section journey-section">
         <h2>My Journey</h2>
 
         <div class="timeline">
           <div class="timeline-item">
-            <div class="timeline-icon">📚</div>
+            <button
+              class="timeline-icon"
+              aria-expanded="false"
+              aria-controls="journey-1"
+            >
+              📚
+            </button>
             <h3>Studied Marketing</h3>
-            <p>Graduated in Digital Marketing and Advertising.</p>
+            <p id="journey-1" class="journey-description" hidden>
+              Graduated in Digital Marketing and Advertising.
+            </p>
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-icon">📈</div>
+            <button
+              class="timeline-icon"
+              aria-expanded="false"
+              aria-controls="journey-2"
+            >
+              📈
+            </button>
             <h3>Digital Marketing</h3>
-            <p>
+            <p id="journey-2" class="journey-description" hidden>
               Started my career working in digital marketing and advertising.
             </p>
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-icon">💻</div>
+            <button
+              class="timeline-icon"
+              aria-expanded="false"
+              aria-controls="journey-3"
+            >
+              💻
+            </button>
             <h3>Discovered Tech</h3>
-            <p>
+            <p id="journey-3" class="journey-description" hidden>
               Completed a software development bootcamp and discovered my
               interest in coding.
             </p>
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-icon">🎓</div>
+            <button
+              class="timeline-icon"
+              aria-expanded="false"
+              aria-controls="journey-4"
+            >
+              🎓
+            </button>
             <h3>Software Engineering</h3>
-            <p>Completed my MSc in Advanced Software Engineering.</p>
+            <p id="journey-4" class="journey-description" hidden>
+              Completed my MSc in Advanced Software Engineering.
+            </p>
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-icon">🚀</div>
+            <button
+              class="timeline-icon"
+              aria-expanded="false"
+              aria-controls="journey-5"
+            >
+              🚀
+            </button>
             <h3>La Fosse</h3>
-            <p>
+            <p id="journey-5" class="journey-description" hidden>
               Now a Tech Trainee at La Fosse and starting my career in
               technology!
             </p>
@@ -336,5 +371,7 @@
 
     <!-- Fixed button -->
     <a href="#home" class="back-to-top"> ↑ </a>
+
+    <script src="script.js"></script>
   </body>
 </html>

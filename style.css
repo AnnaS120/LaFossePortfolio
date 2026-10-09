@@ -124,15 +124,10 @@ header {
 
     background-color: white;
     color: #5b247a;
-
     text-decoration: none;
-
     padding: 12px 25px;
-
     border-radius: 25px;
-
     font-weight: 600;
-
     transition: 0.3s;
 }
 
@@ -217,7 +212,7 @@ header {
 
 
 .journey-section {
-    max-width: none;    
+    max-width: none;
     background-color: #f1f0f0;
 }
 
@@ -258,7 +253,19 @@ header {
     border: 4px solid #7b2cbf;
     border-radius: 50%;
     font-size: 30px;
+    cursor: pointer;
+    font-family: inherit;
     transition: 0.3s;
+}
+
+.timeline-icon:hover {
+    background-color: #f7b733;
+    transform: scale(1.15);
+}
+
+.timeline-icon:focus-visible {
+    outline: 3px solid #f7b733;
+    outline-offset: 4px;
 }
 
 .timeline-item h3 {
@@ -269,15 +276,33 @@ header {
 
 .timeline-item p {
     font-size: 14px;
+    margin-top: 10px;
+}
+
+.journey-description[hidden] {
+    display: none;
+}
+
+.journey-description:not([hidden]) {
+    animation: show-description 0.3s ease;
+}
+
+@keyframes show-description {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .timeline-item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
-.timeline-item:hover .timeline-icon {
-    transform: scale(1.15);
-}
 
 /* =========================
    SKILLS
